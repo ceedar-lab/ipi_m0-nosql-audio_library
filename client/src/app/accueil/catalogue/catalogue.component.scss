@@ -1,0 +1,29 @@
+@import '../../app.component.scss';
+
+.container {
+    background-color: #EEE;
+    padding: 30px 15px 25px;
+    > div {
+        display: flex;
+        justify-content: center;
+        img { 
+            width: 200px;
+            height: 200px;
+        }
+    }
+    > ul {
+        > .titre {
+            font-size: 21px;
+            font-weight: 500;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        > .prix {
+            margin-top: 15px;
+            font-size: 22px;
+            color: red;
+            font-weight: 500;
+            &::after { content: " €" }
+        }
+    }
+}

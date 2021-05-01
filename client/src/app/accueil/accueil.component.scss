@@ -1,0 +1,31 @@
+h1 {
+    position: absolute;
+    margin-left: 20px;
+    top: 15px;
+    font-size: 50px;
+}
+mat-tab-group {
+    padding-top: 10px;    
+    .sorter {
+        margin: 15px 50px 10px;
+        label { margin-right: 50px; }
+        mat-radio-button { margin-right: 70px; }
+    }    
+}
+
+#albums > section:nth-of-type(2), #artistes > section:nth-of-type(2) {
+    padding: 10px 55px;
+}
+
+#catalogue {
+    > section:nth-of-type(2) {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        app-catalogue {
+            margin: 20px 10px;
+            width: 20%;
+        }
+    }
+}
